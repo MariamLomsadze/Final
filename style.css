@@ -1,7 +1,12 @@
+body,
 html {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1,
@@ -25,9 +30,13 @@ header {
   width: 100%;
 }
 
-.main-container {
+.primary-bg {
   background-color: #b28af8;
   padding-bottom: 100px;
+}
+
+.secondary-bg {
+  background-color: #956ae1;
 }
 
 .nav-cont {
@@ -305,7 +314,6 @@ p {
 
 .services-container {
   padding: 100px 0;
-  background-color: #956ae1;
 }
 
 .service-cards-wrapper {
@@ -313,8 +321,6 @@ p {
   display: grid;
   grid-template-columns: 50% auto;
   grid-gap: 20px;
-  /* grid-column: 2;
-  grid-row: 2; */
 }
 
 .service-card {
@@ -361,4 +367,96 @@ p {
   font-family: "Roboto";
   font-size: 16px;
   margin-top: 9px;
+}
+
+.portfolio-container {
+  padding-bottom: 180px;
+}
+
+.portfolio-card-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  margin-top: 59px;
+}
+
+.portfolio-card {
+  border-radius: 30px;
+  background: #b28af8;
+  width: 100;
+}
+
+.portfolio-card h4 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.portfolio-img-div {
+  height: 242px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 30px;
+}
+
+.portfolio-img-div img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-card p {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 9px;
+  line-height: 26px;
+}
+
+.portfolio-1 {
+  background: #e2fef0;
+}
+
+.portfolio-2 {
+  background: #aacbfc;
+}
+
+.portfolio-3 {
+  background: #ffc7e1;
+}
+
+.portfolio-4 {
+  background: #fcffce;
+}
+
+.portfolio-description {
+  padding: 40px;
+  text-align: center;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.slider-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #c4a3fd;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.slider-buttons button:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
